@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full z-10 bg-black pb-10 pt-20 lg:pb-20 lg:pt-[120px] dark:bg-dark text-white">
         <div className="container mx-auto">
-            <div className="-mx-4 flex flex-wrap px-4">
+            <div className="flex flex-wrap px-4">
                 <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
                     <div className="mb-10 w-full">
                         <a className="mb-6 inline-block max-w-[160px]">
