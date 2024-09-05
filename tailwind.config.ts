@@ -5,6 +5,8 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./containers/**/*.{js,ts,jsx,tsx,mdx}",
+    "./containers/**/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -32,7 +34,8 @@ const config: Config = {
         'primaryColor':'#000',
         'secondaryColor':'#FFB23F',
         'black':'#151411',
-        'textColor':'#AFADB5'
+        'textColor':'#AFADB5',
+        'greyColor': '#F5F5F5'
       },
       fontSize: {
         sm: '0.8rem',
