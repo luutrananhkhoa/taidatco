@@ -12,7 +12,7 @@ const ItemSection:FC<ItemSectionProps> = ({product}) => {
   return (
     <div className='min-h-screen text-black w-full flex flex-col items-center'>
         <div className=' text-black w-full max-w-screen-2xl flex justify-center flex-col items-center'> 
-            <div className='w-full flex justify-between items-start gap-4'>
+            <div className='w-full flex flex-col justify-between items-start gap-4 md:flex-row'>
                 <ProductImage 
                     productCode={product.productCode}
                     productName={product.productName}
