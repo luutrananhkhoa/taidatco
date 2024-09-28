@@ -1,6 +1,6 @@
-import { HeaderNav } from "@/types/HeaderNav";
+import { NavItem } from "@/types/NavItem";
 
-export const FooterLinks: HeaderNav[] = [
+export const FooterLinks: NavItem[] = [
     {
         id: 1,
         value: "Trang chủ",
@@ -28,7 +28,7 @@ export const FooterLinks: HeaderNav[] = [
     }
 ]
 
-export const CompanyLinks: HeaderNav[] = [
+export const CompanyLinks: NavItem[] = [
     {
         id: 1,
         value: "Giới thiệu",

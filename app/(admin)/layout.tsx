@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import "./globals.css";
+import "./../globals.css";
 import 'tailwindcss/tailwind.css'
-import Header from "@/components/Header";
-import Footer from "@/components/footer";
 
 const roboto = Roboto({ weight: ["500"], subsets: ["vietnamese"] });
 
@@ -20,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

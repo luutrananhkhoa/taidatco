@@ -1,6 +1,6 @@
-import { HeaderNav } from "@/types/HeaderNav";
+import { NavItem } from "@/types/NavItem";
 
-export const HeaderNavs: HeaderNav[] = [
+export const HeaderNavs: NavItem[] = [
     {
         id: 1,
         value: "Trang chủ",
