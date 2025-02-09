@@ -188,7 +188,7 @@ const ProductSection: FC = (props: Props) => {
     const renderProductList = () => {
         return(
             sampleProducts.map((item, index)=>{
-                return <ProductCard item={item}/>
+                return <ProductCard key={index} item={item}/>
             })
         )
     }

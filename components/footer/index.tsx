@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
                     <div className="mb-10 w-full">
-                        <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                        <h4 className="mb-9 text-lg font-medium text-dark dark:text-white">
                             CÔNG TY
                         </h4>
                         <ul className="space-y-3">
@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
                     <div className="mb-10 w-full">
-                        <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                        <h4 className="mb-9 text-lg font-medium text-dark dark:text-white">
                             TRUY CẬP
                         </h4>
                         <ul className="space-y-3">
@@ -88,7 +88,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
                     <div className="mb-10 w-full">
-                    <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                    <h4 className="mb-9 text-lg font-medium text-dark dark:text-white">
                         Follow Us On
                     </h4>
                     <div className="mb-6 flex items-center">

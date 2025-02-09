@@ -17,7 +17,7 @@ const CategoryCard:FC<CategoryCardProps> = ({id, title, imgSrc}) => {
             height={'60'}
             alt=''
         />
-        <h3 className='font-semibold text-wrap w-40 text-center'>{title}</h3>
+        <h3 className='font-medium text-wrap w-40 text-center'>{title}</h3>
     </div>
   )
 }

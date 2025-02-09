@@ -25,7 +25,7 @@ const Breadcrumb = ({
 
   return (
     <div className='w-full flex justify-center align-center p-4'>
-      <ul className={`w-full flex justify-center align-center gap-2 font-semibold text-sm ${containerClasses}`}>
+      <ul className={`w-full flex justify-center align-center gap-2 font-medium text-sm ${containerClasses}`}>
         <li className={listClasses}>
           <Link href={'/'}>{homeElement}</Link>
         </li>

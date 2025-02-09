@@ -12,7 +12,7 @@ import SidebarNav from '@/components/Navs/SidebarNav';
 const Sidebar = () => {
 
     const SidebarClassNames = `fixed flex flex-col h-[100%] justify-between shadow-xl transition-all 
-    duration-300 h-full z-40 overflow-y-auto bg-white w-0 hidden`;
+    duration-300 h-full z-40 overflow-y-auto bg-white w-64`;
 
     // const SidebarClassNames = `fixed flex flex-col h-[100%] justify-between shadow-xl transition-all 
     // duration-300 h-full z-40 overflow-y-auto bg-white ${isSidebarCollapsed ? "w-0 hidden" : "w-64"}`;
@@ -58,8 +58,8 @@ const Sidebar = () => {
                     <div className={`relative flex cursor-pointer items-center gap-4 transition-colors
                     hover:bg-gray-100 justify-start px-8 py-3`}>
                         <LogOut className={`h-6 w-6 text-gray-800`}/>
-                        <span className={`text-lg font-medium text-gray-800 dark:text-gray-100 hover:font-semibold`}>
-                            Logout
+                        <span className={`text-lg font-medium text-gray-800 dark:text-gray-100 hover:font-medium`}>
+                            Đăng xuất
                         </span>
                     </div>
                 </Link>

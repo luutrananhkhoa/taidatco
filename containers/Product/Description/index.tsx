@@ -38,14 +38,14 @@ const ProductDescriptionSection:FC<productDescriptionSectionProps> = ({
                 <span>{category}</span>
             </div>
             <div className='border-b-2 w-full pb-6'>
-                <h1 className='text-4xl font-semibold mb-2'>{productName}</h1>
-                <p><span className='font-semibold'>Mã sản phẩm:</span> {productCode}</p>
+                <h1 className='text-4xl font-medium mb-2'>{productName}</h1>
+                <p><span className='font-medium'>Mã sản phẩm:</span> {productCode}</p>
             </div>
             <div className='text-justify'>
                 <p>{summary}</p>
             </div>
             <div className="">
-                <span className="font-semibold text-xl">Mô Tả:</span>
+                <span className="font-medium text-xl">Mô Tả:</span>
                 {renderDescription(description)}
             </div>
         </div>

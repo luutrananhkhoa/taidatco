@@ -9,7 +9,7 @@ export const HeaderNavs: NavItem[] = [
     {
         id: 2,
         value: "Sản phẩm",
-        href: "/collection/all"
+        href: "/collection"
     },
     {
         id: 3,

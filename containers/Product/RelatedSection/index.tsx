@@ -151,7 +151,7 @@ const RelatedSection = (props: Props) => {
   return (
     <div className='text-black w-full max-w-screen-2xl flex justify-center flex-col items-center py-40'>
         <div className='p-4'>
-            <h1 className='text-4xl font-semibold'>Sản Phẩm Liên Quan</h1>
+            <h1 className='text-4xl font-medium'>Sản Phẩm Liên Quan</h1>
         </div>
         <div className='w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
             {renderRelatedProducts(sampleProducts)}
