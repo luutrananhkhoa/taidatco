@@ -4,8 +4,16 @@ import { SortOptions } from './constant'
 import ProductCard from '@/components/Cards/ProductCard'
 import PrimaryButton from '@/components/Buttons/PrimaryButton'
 import { ProductDetail } from '@/types/ProductDetail'
+import { Product } from '@/lib/product/types'
 
-type Props = {}
+type ProductSectionProps = {
+    products: Product[]
+    loading: boolean
+    isShowFilter: boolean
+    setIsShowFilter: (value: boolean | ((prev: boolean) => boolean)) => void
+    filterValue: string
+    handleSortOptionClick: (value: string) => void
+}
 
 const sampleProducts: ProductDetail[] = [
     {
@@ -176,29 +184,28 @@ const sampleProducts: ProductDetail[] = [
 ]
 
   
-const ProductSection: FC = (props: Props) => {
-
-    const [isShowFilter, setIsShowFilter] = useState<Boolean>(false)
-    const [filterValue, setFilterValue] = useState<String>('Sắp xếp')
-    const handleSortOptionClick = (value: string) => {
-        setIsShowFilter(false)
-        setFilterValue(value)
-    };
-
-    const renderProductList = () => {
-        return(
-            sampleProducts.map((item, index)=>{
-                return <ProductCard key={index} item={item}/>
-            })
-        )
-    }
+const ProductSection: FC<ProductSectionProps> = ({ 
+  products, 
+  loading,
+  isShowFilter,
+  setIsShowFilter,
+  filterValue,
+  handleSortOptionClick
+}) => {
+  const renderProductList = () => {
+      return(
+          sampleProducts.map((item, index)=>{
+              return <ProductCard key={index} item={item}/>
+          })
+      )
+  }
   return (
     <>
         {/* Filter Section */}
         <div className='w-full pt-20 pb-6 relative'>
             <div className='w-full flex justify-between items-center'>
                 <div className=''>
-                    <button onClick={() => setIsShowFilter((prev) => !prev)} className="text-black bg-greyColor hover:bg-[#E7E5E5] focus:ring-4 focus:ring-greyColor font-medium text-sm px-6 py-4 text-center inline-flex items-center rounded-full" type="button">
+                    <button onClick={() => setIsShowFilter((prev: boolean) => !prev)} className="text-black bg-greyColor hover:bg-[#E7E5E5] focus:ring-4 focus:ring-greyColor font-medium text-sm px-6 py-4 text-center inline-flex items-center rounded-full" type="button">
                         {filterValue}
                         <ArrowDownIcon />
                     </button>

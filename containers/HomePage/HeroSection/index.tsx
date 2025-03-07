@@ -1,4 +1,3 @@
-import SearchInput from "@/components/Forms/Search/SearchInput";
 import Image from "next/image";
 import React, { FC } from "react";
 import HeroImg from  "@/public/hero.png"
